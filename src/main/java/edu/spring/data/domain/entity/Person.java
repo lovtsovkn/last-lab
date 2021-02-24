@@ -1,27 +1,24 @@
-package edu.spring.data.domain;
+package edu.spring.data.domain.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Country {
+public class Person {
 
     @Id
     @GeneratedValue
     private int id;
 
+
     private String name;
 
-    public Country() {
-    }
-
-    public Country(String name, int population) {
+    public Person(String name) {
         this.name = name;
-        this.population = population;
     }
 
-    private int population;
+    public Person() { }
 
     public int getId() {
         return id;
@@ -39,11 +36,11 @@ public class Country {
         this.name = name;
     }
 
-    public int getPopulation() {
-        return population;
-    }
-
-    public void setPopulation(int population) {
-        this.population = population;
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

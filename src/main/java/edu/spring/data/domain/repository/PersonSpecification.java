@@ -1,6 +1,6 @@
 package edu.spring.data.domain.repository;
 
-import edu.spring.data.domain.Person;
+import edu.spring.data.domain.entity.Person;
 import org.springframework.data.jpa.domain.Specification;
 
 public class PersonSpecification {

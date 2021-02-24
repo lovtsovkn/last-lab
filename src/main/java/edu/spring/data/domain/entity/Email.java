@@ -1,4 +1,4 @@
-package edu.spring.data.domain;
+package edu.spring.data.domain.entity;
 
 public class Email {
 
